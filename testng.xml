@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/user/UI_AUTOMATION/Selenium_WebDriver/POM/Konga">
+        <classes>
+            <class name="setUp.setUpTests">
+        <methods>
+            <include name="testURL"/>
+        </methods>
+    </class>
+        <class name="Login.LoginTests">
+            <methods>
+                <include name="testsuccessfullogin"/>
+                <include name="TestReturnDashboardPage"/>
+            </methods>
+        </class>
+        <class name="DashboardTests.DashboardTests">
+            <methods>
+                <include name="VerifyLoginPopUp"/>
+                <include name="assertpageURL"/>
+                <include name="assertname"/>
+                <include name="pageTitle"/>
+                <include name="assertItems"/>
+                <include name="successfulLogout"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+</suite>
